@@ -53,7 +53,8 @@ export default function Index() {
 
     useEffect(() => {
         try {
-            window.ga('set', 'page', location.pathname + location.search);
+            const pageUrl = window.location.origin + '/#' + location.pathname
+            window.ga('set', 'page', pageUrl);
             window.ga('send', 'pageview');
         } catch (error) {
             
