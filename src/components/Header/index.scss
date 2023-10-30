@@ -1,0 +1,9 @@
+.nav-header {
+    @apply border-b bg-gray-800;
+    .inner {
+        @apply  max-w-5xl mx-auto flex items-center;
+        .navigator-button {
+            @apply cursor-pointer py-1 px-3 rounded mr-1 text-white hover:bg-black;
+        }
+    }
+}
