@@ -52,9 +52,7 @@ export default function Index() {
     }, [location]);
 
     useEffect(() => {
-        console.log('Location changed!', path);
         try {
-            
             window.ga('set', 'page', location.pathname + location.search);
             window.ga('send', 'pageview');
         } catch (error) {
