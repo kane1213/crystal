@@ -6,7 +6,7 @@ export default () => {
     // console.log(myNavigate)
     
     // myNavigate('/' + path)
-    window.location.href = `/${path}`
+    window.location.href = `/crystal/${path}`
   }
   return <div className="nav-header">
     <div className="inner">
