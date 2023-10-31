@@ -1,29 +1,28 @@
 import './index.scss'
-import { useNavigate } from 'react-router-dom'
 
 
 export default () => {
-  const myNavigate = useNavigate();
   function changePage (path: string) {
     // console.log(myNavigate)
     
-    myNavigate('/' + path)
+    // myNavigate('/' + path)
+    window.location.href = `/${path}`
   }
   return <div className="nav-header">
     <div className="inner">
       <div onClick={() => {
-        changePage('home')
+        changePage('')
       }} className="navigator-button">HOME</div>
       <div onClick={() => {
-        changePage('about')
+        changePage('About')
       }}  className="navigator-button">ABOUT</div>
 
     <div onClick={() => {
-        changePage('contact')
+        changePage('Contact')
       }}  className="navigator-button">Contact</div>
     
     <div onClick={() => {
-        changePage('products')
+        changePage('Products')
       }}  className="navigator-button">Products</div>
     
     </div>

@@ -9,7 +9,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [reactRefresh()],
+  plugins: [reactRefresh(), mpa.default()],
   resolve: {
     alias: {
       '~': path.resolve(__dirname, './src'),
@@ -17,15 +17,15 @@ export default defineConfig({
     },
   },
   // base: './',
-  build: {
-    rollupOptions: {
-      input: {
-        main: 'index.html',
-        about: 'index.html'
-        // index: 'src/pages/Home/index.tsx',
-        // about: 'src/pages/About/index.tsx',
-        // contact: 'src/pages/Contact/index.tsx',
-      },
-    },
-  },
+  // build: {
+  //   rollupOptions: {
+  //     input: {
+  //       main: 'index.html',
+  //       about: 'index.html'
+  //       // index: 'src/pages/Home/index.tsx',
+  //       // about: 'src/pages/About/index.tsx',
+  //       // contact: 'src/pages/Contact/index.tsx',
+  //     },
+  //   },
+  // },
 })
