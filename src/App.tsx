@@ -1,7 +1,7 @@
 
 function App() {
   
-  return <div>
+  return <div className="crystal">
     2234
   </div>
 }

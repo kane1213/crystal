@@ -9,18 +9,20 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [reactRefresh(), mpa.default()],
+  plugins: [reactRefresh()],
   resolve: {
     alias: {
       '~': path.resolve(__dirname, './src'),
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: './',
+  // base: './',
   build: {
     rollupOptions: {
       input: {
-        index: 'src/pages/Home/index.tsx',
+        main: 'index.html',
+        about: 'index.html'
+        // index: 'src/pages/Home/index.tsx',
         // about: 'src/pages/About/index.tsx',
         // contact: 'src/pages/Contact/index.tsx',
       },
