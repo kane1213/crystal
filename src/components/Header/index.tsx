@@ -11,7 +11,7 @@ export default () => {
   return <div className="nav-header">
     <div className="inner">
       <div onClick={() => {
-        changePage('')
+        changePage('index')
       }} className="navigator-button">HOME</div>
       <div onClick={() => {
         changePage('About')
