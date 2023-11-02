@@ -16,8 +16,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  // base: '/crystal/',
-  base: './'
+  base: '/crystal/',
+  // base: './'
   // build: {
   //   rollupOptions: {
   //     input: {

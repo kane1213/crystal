@@ -7,7 +7,7 @@ const store = {
       ...store.state,
       ...data
     }
-    store.listeners.forEach((listener) => { listener() })
+    store.listeners.forEach((listener) => { if (!!listener && typeof listener === 'function') listener() })
   },
   listeners: new Set(),
   subscribe(callback: Function) {
