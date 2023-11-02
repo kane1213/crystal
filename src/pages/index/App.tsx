@@ -1,2 +1,10 @@
+import store from '@/store'
+// https://milkmidi.medium.com/react-18-usesyncexternalstore-a427bf82c198
+export default () => {
 
-export default () => <div className="flex justify-center items-center min-h-[98vh] text-3xl">HOME</div>
+
+return <div className="flex justify-center items-center min-h-[98vh] text-3xl">
+  HOME
+</div>
+
+}
