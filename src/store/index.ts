@@ -7,17 +7,16 @@ const store = {
       ...store.state,
       ...data
     }
+    store.listeners.forEach((listener) => { listener() })
   },
   listeners: new Set(),
   subscribe(callback: Function) {
-    this.listeners.add(callback)
+    store.listeners.add(callback)
     return () => {
-      this.listeners.delete(callback)
+      store.listeners.delete(callback)
     }
   },
-  getSnapshot() {
-    return this.state
-  }
+  getSnapshot:() => store.state
 }
 
 export default store
