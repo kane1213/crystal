@@ -54,5 +54,5 @@ jobs:
       #     publish_dir: ./dist
       - name: Deploy
         uses: kane1213/crystal
-        with:
-          folder: dist
+          with:
+            folder: dist
