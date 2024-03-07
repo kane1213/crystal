@@ -53,6 +53,6 @@ jobs:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
       #     publish_dir: ./dist
       - name: Deploy
-        uses: kane1213/github-pages-deploy-action@4.1.1
+        uses: kane1213/crystal
         with:
           folder: dist
