@@ -48,6 +48,7 @@ jobs:
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        github_token: ${{ secrets.GITHUB_TOKEN }}
         uses: actions/deploy-pages@v3
-        publish_dir: ./dist
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
