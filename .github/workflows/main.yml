@@ -50,3 +50,4 @@ jobs:
         id: deployment
         github_token: ${{ secrets.GITHUB_TOKEN }}
         uses: actions/deploy-pages@v3
+        publish_dir: ./dist
