@@ -43,7 +43,7 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-          with:
-          publish_dir: ./dist
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          commit_message: 自动部署 # 5.部署时的 git 提交信息，自由填写
+        with:
+        publish_dir: ./dist
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        commit_message: 自动部署 # 5.部署时的 git 提交信息，自由填写
